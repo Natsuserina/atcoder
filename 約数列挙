@@ -4,7 +4,7 @@ def divisor(n):
     table = []
     while i * i <= n:
         if n%i == 0:
-            table.append([i, n//i])
+            table.append(i)
             table.append(n//i)
         i += 1
     table = list(set(table))
