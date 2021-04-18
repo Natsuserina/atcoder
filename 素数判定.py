@@ -1,6 +1,5 @@
 def divisor(n): 
     i = 2
-    table = [1, n]
     while i * i <= n:
         if n%i == 0:
             return False
