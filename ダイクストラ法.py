@@ -7,6 +7,7 @@ for i in range(N):
 for i in range(M):
     u, v, c = map(int, input().split())
     G[u].append((c, v))
+    G[v].append((c, u))
 
 dist = [-1]*N
 dist[0] = 0
