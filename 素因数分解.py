@@ -18,3 +18,6 @@ def prime_factorize(n):
         a.append(n)
     
     return n
+
+N = int(input())
+print(prime_factorize(N))
