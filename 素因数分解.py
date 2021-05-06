@@ -1,5 +1,4 @@
 #素因数分解
-import collections
 a = []
 def prime_factorize(n):
     global a
@@ -19,9 +18,3 @@ def prime_factorize(n):
         a.append(n)
     
     return n
-
-N = int(input())
-prime_factorize(N)
-c = collections.Counter(a)
-exp = c.values()
-exp = list(exp)
