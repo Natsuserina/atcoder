@@ -9,3 +9,6 @@ def divisor(n):
         i += 1
     table = list(set(table))
     return table
+
+N = int(input())
+print(divisor(N))
