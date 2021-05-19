@@ -1,9 +1,7 @@
 from collections import deque
 #頂点数N、辺情報E、始点sは与えられている
 
-visited = []
-for i in range(N):
-    visited.append(False)
+visited = [False]*N
 
 Q = deque()
 Q.append(s)
