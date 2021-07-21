@@ -7,8 +7,8 @@ for i in range(N):
     G.append([])
 for i in range(M):
     u, v, t = map(int, input().split())
-    G[u].append((t, v))
-    G[v].append((t, u))
+    G[u-1].append((t, v-1))
+    G[v-1].append((t, u-1))
 
 time = [-1]*N
 time[0] = 0
