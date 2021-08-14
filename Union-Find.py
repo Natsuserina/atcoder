@@ -1,4 +1,4 @@
-N, M, K = map(int,input().split())
+N = int(input())
 
 #par[i]:頂点iの根。par[i]==iの時、自分がグループの根。
 par = [i for i in range(N)]
@@ -30,25 +30,3 @@ def union(x, y):
 
 def same(x, y):
     return find(x) == find(y)
-
-for _ in range(M):
-    a, b = map(int,input().split())
-    a -= 1
-    b -= 1
-    #友達関係は-1する
-    ans[a] -= 1
-    ans[b] -= 1
-    union(a, b)
-
-for _ in range(K):
-    c,d = map(int,input().split())
-    c -= 1
-    d -= 1
-    if same(c, d):
-        #同じグループに所属しているブロック関係は-1する
-        ans[c] -= 1
-        ans[d] -= 1
-
-for i in range(N):
-    ans[i] += sz[find(i)] - 1
-    print(ans[i], end=' ')
