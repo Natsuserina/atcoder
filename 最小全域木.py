@@ -7,9 +7,7 @@ for _ in range(M):
     G[a-1].append((b-1, c))
     G[b-1].append((a-1, c))
 
-marked = []
-for _ in range(N):
-    marked.append(False)
+marked = [False]*N
 marked_count = 0
 marked[0] = True
 marked_count += 1
