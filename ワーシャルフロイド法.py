@@ -2,11 +2,7 @@ INF = 1_000_000_000_000_000_000
 
 N, M = map(int, input().split())
 
-dist = []
-for i in range(N):
-    dist.append([])
-    for j in range(N):
-        dist[i].append(INF)
+dist = [[INF]*N for i in range(N)]
 
 for _ in range(M):
     u, v, c = map(int, input().split())
