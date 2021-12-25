@@ -1,0 +1,7 @@
+alpha = 'abcdefghijklmnopqrstuvwxyz'
+Dic_ai = {}
+for i in range(26):
+    Dic_ai[alpha[i]] = i
+Dic_ia = {}
+for i in range(26):
+    Dic_ia[i] = alpha[i]
